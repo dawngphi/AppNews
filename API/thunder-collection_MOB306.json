@@ -1,0 +1,256 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "MOB306",
+    "dateExported": "2023-05-19T03:59:15.979Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "API",
+            "containerId": "",
+            "created": "2023-02-01T11:16:08.216Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ddc3ed1b-3b50-4b2d-ba57-bbdfae4d4f77",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Đăng ký tài khoản",
+            "url": "https://fpoly-hcm.herokuapp.com/api/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-01T11:16:08.216Z",
+            "modified": "2023-04-03T00:57:01.980Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"chao1@gmail.com\",\n    \"password\": \"1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "58bccddd-cc2b-4ed7-a3d6-33a6818b1adc",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Đăng nhập",
+            "url": "https://fpoly-hcm.herokuapp.com/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-01T11:16:08.217Z",
+            "modified": "2023-02-21T07:15:48.347Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"den@gmail.com\",\n    \"password\": \"1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "47688b5e-3487-4731-ad6f-f030b76bfe35",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Đăng xuất",
+            "url": "https://fpoly-hcm.herokuapp.com/api/auth/logout",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-02-01T11:16:08.218Z",
+            "modified": "2023-02-01T11:16:08.218Z",
+            "headers": []
+        },
+        {
+            "_id": "8385a40a-0534-4cac-b600-eda33f5d2fee",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Đổi mật khẩu",
+            "url": "https://fpoly-hcm.herokuapp.com/api/users/change-password",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-02-01T11:16:08.219Z",
+            "modified": "2023-02-01T11:16:08.219Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"password\": \"111\"\r\n}"
+            }
+        },
+        {
+            "_id": "10532189-73bf-4651-afa8-d499cc84f342",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Cập nhật thông tin cá nhân",
+            "url": "https://fpoly-hcm.herokuapp.com/api/users/update-profile",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-02-01T11:16:08.220Z",
+            "modified": "2023-02-01T11:16:08.220Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"ly tieu long\",\r\n    \"address\": \"Quận 3\",\r\n    \"phone\": \"029209293\",\r\n    \"avatar\": \"https://2.pik.vn/20228e132485-e812-4825-8ae5-34506c84acbe.jpg\",\r\n    \"dob\": \"2000-08-20\"\r\n}"
+            }
+        },
+        {
+            "_id": "962c570a-b1b4-46b6-8748-d9bbb52be25b",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Upload hình ảnh lên server",
+            "url": "https://fpoly-hcm.herokuapp.com/api/media/upload",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-02-01T11:16:08.221Z",
+            "modified": "2023-02-17T00:52:17.472Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "/Users/channguyen/Downloads/QRopendoor.png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2RhNGJhODcyYTdlMjAwMTZhODFkYTAiLCJlbWFpbCI6ImRlbkBnbWFpbC5jb20iLCJuYW1lIjoiQ8O0bmcgbsOoIDo-PiIsImFkZHJlc3MiOiJRdeG6rW4gR8OyIFbhuqVwIiwicGhvbmUiOiIwOTM4Nzc3NjQ1IiwiYXZhdGFyIjoiaHR0cHM6Ly9zMTIwLWF2YS10YWxrLnphZG4udm4vMy8zLzQvMy8yNC8xMjAvYmM0YzI2ZTNlY2ExNGY1YjQyOGRjNGQ1NWJjNDUwODEuanBnIiwiaWF0IjoxNjc2MDAwNjAzLCJleHAiOjE2Nzg1OTI2MDN9.SXJBt45iSmLsXErpZrdCYw8UZ9_I54Yo5TFblWu61UM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "54e57d88-cfda-47ca-b20a-7ad741a6f5cd",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Lấy thông tin chi tiết 1 bài viết",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles/63dfcaf63b628000164121fe/detail",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-02-01T11:16:08.222Z",
+            "modified": "2023-02-14T01:08:58.346Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2RhNGJhODcyYTdlMjAwMTZhODFkYTAiLCJlbWFpbCI6ImRlbkBnbWFpbC5jb20iLCJuYW1lIjoiQ8O0bmcgbsOoIDo-PiIsImFkZHJlc3MiOiJRdeG6rW4gR8OyIFbhuqVwIiwicGhvbmUiOiIwOTM4Nzc3NjQ1IiwiYXZhdGFyIjoiaHR0cHM6Ly9zMTIwLWF2YS10YWxrLnphZG4udm4vMy8zLzQvMy8yNC8xMjAvYmM0YzI2ZTNlY2ExNGY1YjQyOGRjNGQ1NWJjNDUwODEuanBnIiwiaWF0IjoxNjc2MDAwNjAzLCJleHAiOjE2Nzg1OTI2MDN9.SXJBt45iSmLsXErpZrdCYw8UZ9_I54Yo5TFblWu61UM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3851a4a6-2a0a-4ab1-93ca-e4b8ac522eef",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Lấy danh sách bài viết",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-02-01T11:16:08.223Z",
+            "modified": "2023-04-03T01:07:29.410Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2RhNGJhODcyYTdlMjAwMTZhODFkYTAiLCJlbWFpbCI6ImRlbkBnbWFpbC5jb20iLCJuYW1lIjoiQ8O0bmcgbsOoIDo-PiIsImFkZHJlc3MiOiJRdeG6rW4gR8OyIFbhuqVwIiwicGhvbmUiOiIwOTM4Nzc3NjQ1IiwiYXZhdGFyIjoiaHR0cHM6Ly9zMTIwLWF2YS10YWxrLnphZG4udm4vMy8zLzQvMy8yNC8xMjAvYmM0YzI2ZTNlY2ExNGY1YjQyOGRjNGQ1NWJjNDUwODEuanBnIiwiaWF0IjoxNjgwNDg0MDM2LCJleHAiOjE2ODMwNzYwMzZ9.8aUaa91SbyZi2gLe2NMgAMOZ8yJgRSmIkbB_sVfTP-s"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8d392fff-8f90-43a5-a1e5-27a002bdd6fb",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Lấy bài viết của tôi",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles/my-articles",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-02-01T11:16:08.224Z",
+            "modified": "2023-02-01T11:16:08.224Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "b5bc56aa-b176-41db-9759-1073658321a1",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Tìm kiếm bài viết theo tên",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles/search?title=vestibulum",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-02-01T11:16:08.225Z",
+            "modified": "2023-02-01T11:16:08.225Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "title",
+                    "value": "vestibulum"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        },
+        {
+            "_id": "b174e924-3ee6-4893-9d61-7dcc799c6ad7",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Thêm mới bài viết",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-02-01T11:16:08.226Z",
+            "modified": "2023-02-01T11:16:08.226Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Phasellus in felis. Donec semper sapien a libero. Nam dui.\",\r\n  \"content\": \"Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\",\r\n  \"image\": \"https://cdn.tuoitre.vn/2022/8/21/z36603545985729afe273eca0b86d68c30c8be6d894cd1-16610703194001184506404.jpg\"\r\n}"
+            }
+        },
+        {
+            "_id": "6904d0a6-680e-446b-805e-11410af8bd5c",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Cập nhật bài viết",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles/6316bbd5562ab100165ade5b/update",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-02-01T11:16:08.227Z",
+            "modified": "2023-02-01T11:16:08.227Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Phasellus in felis. Donec semper sapien a libero. Nam dui. Cập nhật bài viết\",\r\n  \"content\": \"Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\",\r\n  \"image\": \"https://cdn.tuoitre.vn/2022/8/21/z36603545985729afe273eca0b86d68c30c8be6d894cd1-16610703194001184506404.jpg\"\r\n}"
+            }
+        },
+        {
+            "_id": "cbb02dac-3502-4d12-be41-8066e182fb1c",
+            "colId": "b9d8391a-e69e-4ba3-a7ab-3d64c793ff37",
+            "containerId": "f4343779-c695-4610-b6a6-26abc2f1feff",
+            "name": "Xóa bài viết",
+            "url": "https://fpoly-hcm.herokuapp.com/api/articles/6316bbd5562ab100165ade5b/delete",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-02-01T11:16:08.228Z",
+            "modified": "2023-02-01T11:16:08.228Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzE2YWM3ZDU4NDU5NDAwMTZkZjhmMTAiLCJlbWFpbCI6InRlc3RlcjFAZ21haWwuY29tIiwibmFtZSI6Im1pbmggdGlldSBsb25nIiwiYWRkcmVzcyI6InF1YW4xMyIsInBob25lIjoiMDEyMTIzMTIzIiwiYXZhdGFyIjoiaHR0cHM6Ly8yLnBpay52bi8yMDIyOGUxMzI0ODUtZTgxMi00ODI1LThhZTUtMzQ1MDZjODRhY2JlLmpwZyIsImlhdCI6MTY2NTIzNDcxMiwiZXhwIjoxNjY3ODI2NzEyfQ.gCZplHBnznIr76bF1zLUXEfO9Z_Y2WfF7mpA6HpGWus"
+        }
+    }
+}
